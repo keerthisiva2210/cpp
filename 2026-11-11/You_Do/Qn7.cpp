@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int pages = 14;
+    int capacity = 5;
+    int batches = 0;
+
+    while (pages > 0) {
+
+        if (pages < capacity) {
+            pages = 0;
+        } else {
+            pages = pages - capacity;
+        }
+
+        cout << "Pages remaining = " << pages << endl;
+        batches++;
+    }
+
+    cout << "Batches = " << batches;
+
+    return 0;
+}
